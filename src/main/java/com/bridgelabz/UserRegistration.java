@@ -9,6 +9,7 @@ public class UserRegistration {
         UserRegistration userRegistration = new UserRegistration();
         userRegistration.validFirstName();
         userRegistration.validSecondName();
+        userRegistration.validEmailId();
     }
 
     public void validFirstName() {
@@ -38,6 +39,21 @@ public class UserRegistration {
             System.out.println("Second name is valid");
         } else {
             System.out.println("Second name is Invalid");
+        }
+    }
+
+    public void validEmailId() {
+        Pattern pattern = Pattern.compile("^[a-z]*.[a-z]+@[a-z]+.[a-z]{2,3}(.[a-z]{2})*$");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter user Email");
+        String email = scanner.next();
+
+        Matcher matcher = pattern.matcher(email);
+        if (matcher.matches()) {
+            System.out.println("Email name is valid");
+        } else {
+            System.out.println("Email name is Invalid");
         }
     }
 }
