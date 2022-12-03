@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelabz.UserRegistrationTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2022-12-03T02:34:17" hostname="SUDHA" time="0.047">
+  <properties/>
+  <testcase name="givenTextWhenItDoesNotContainsFirstCapsInFnameShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.012"/>
+  <testcase name="givenMobileNumberWithSpaceAndProperNumberShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenMobileNumberWithoutSpaceAndProperNumberShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPasswordWithoutMinNumOfCharShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailWhenDoesNotContainsAtTheRateShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.003"/>
+  <testcase name="givenTextWhenItContainsFirstCapsInlnameButNotMinThreeCharShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPasswordWithoutASpecialCharShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailWhenItContainsMoreThanThreeCharAtLastShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenTextWhenItContainsFirstCapsInFnameAndMinThreeAlphabetsShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenTextWhenItContainsFirstCapsInFnameButNotMinThreeCharShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPasswordWithoutAnUpperCaseShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPasswordWithoutALowerCaseShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailWhenAccordingToProperReqShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenTextWhenItContainsFirstCapsInSnameShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailWhenItContainsDigitsInTLDShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenMobileNumberWithSpaceButNotProperCountryCodeShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailWhenItContainsMoreThanTwoTLDShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailWhenItContainsOneCharInTLDShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailWhenItContainsSpecialCharacterShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailWhenItContainsDoubleDotsShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailWhenDoesNotContainsabcShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPasswordWithProperRequirementsShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenTextWhenItDoesNotContainsFirstCapsInlnameShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
