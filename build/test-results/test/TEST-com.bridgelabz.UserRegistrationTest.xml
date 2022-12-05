@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelabz.UserRegistrationTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2022-12-05T16:54:20" hostname="SUDHA" time="0.037">
+  <properties/>
+  <testcase name="givenTextWhenItDoesNotContainsFirstCapsInFnameShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.01"/>
+  <testcase name="givenMobileNumberWithSpaceAndProperNumberShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenMobileNumberWithoutSpaceAndProperNumberShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPasswordWithoutMinNumOfCharShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailWhenDoesNotContainsAtTheRateShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPasswordWithoutASpecialCharShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenTextWhenItContainsFirstCapsInFnameAndMinThreeAlphabetsShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenTextWhenItContainsFirstCapsInFnameButNotMinThreeCharShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPasswordWithoutAnUpperCaseShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPasswordWithoutALowerCaseShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailWhenAccordingToProperReqShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenTextWhenItContainsFirstCapsInSnameAndMinThreeAlphabetsShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenMobileNumberWithSpaceButNotProperCountryCodeShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPasswordWithProperRequirementsShouldReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenTextWhenItDoesNotContainsFirstCapsInSnameShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.004"/>
+  <testcase name="givenTextWhenItContainsFirstCapsInSnameButNotMinThreeCharShouldReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
