@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 public class UserRegistrationTest {
+
     static UserRegistration user;
     @BeforeAll
     public static void initiate(){
@@ -46,6 +47,7 @@ public class UserRegistrationTest {
         String expectedRes = "InValid";
         Assertions.assertSame(actualResult, expectedRes);
     }
+
     @Test
     public void givenTextWhenItContainsFirstCapsInSnameShouldReturnTrue() {
         String actual = user.validFirstName("Sudha");
@@ -186,4 +188,3 @@ public class UserRegistrationTest {
         Assertions.assertEquals(actualResult, expectedRes);
     }
 }
-
