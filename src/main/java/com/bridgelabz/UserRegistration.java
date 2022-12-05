@@ -1,61 +1,57 @@
 package com.bridgelabz;
 
-import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class UserRegistration {
-    public String validFirstName(String fName){
-            Pattern pattern = Pattern.compile("^[A-Z]+[a-zA-Z]{2,}[0-9]*$");
 
-            Matcher match = pattern.matcher(fName);
-            if (match.matches())
-                return "Valid";
-            else
-                return "InValid";
-        }
+    public String validFirstName(String fName) throws UserRegistrationException {
+        Pattern pattern = Pattern.compile("^[A-Z]+[a-zA-Z]{2,}$");
 
-        public String validSecondName(String sName){
-            Pattern pattern = Pattern.compile("^[A-Z]+[a-zA-Z]{2,}[0-9]*$");
-
-
-            Matcher match = pattern.matcher(sName);
-            if (match.matches())
-                return "Valid";
-            else
-                return "InValid";
-        }
-
-        public String validEmailId(String email){
-            Pattern pattern = Pattern.compile("^[a-z0-9]{1,20}([_.+-][a-z0-9]+)?@[a-z0-9]+.[a-z]{2,3}(.[a-z]{2})?$");
-
-            Matcher match = pattern.matcher(email);
-            if (match.matches())
-                return "Valid";
-            else
-                return "InValid";
-        }
-
-        public String validPhoneNumber(String phoneNumber){
-            Pattern pattern = Pattern.compile("^91\s[6-9][0-9]{9}$");
-
-            Matcher match = pattern.matcher(phoneNumber);
-            if (match.matches())
-                return "Valid";
-            else
-                return "InValid";
-
-        }
-
-        public String validPassword(String password){
-            Pattern pattern = Pattern.compile("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$%^&+=])?.{8,}$");
-
-            Matcher match = pattern.matcher(password);
-            if (match.matches())
-                return "Valid";
-            else
-                return "InValid";
-        }
-
+        Matcher match = pattern.matcher(fName);
+        if (match.matches())
+            return "Valid";
+        else
+            throw new UserRegistrationException("Enter Valid first Name");
     }
 
+    public String validSecondName(String sName) throws UserRegistrationException {
+        Pattern pattern = Pattern.compile("^[A-Z]+[a-zA-Z]{2,}$");
+
+
+        Matcher match = pattern.matcher(sName);
+        if (match.matches())
+            return "Valid";
+        else
+            throw new UserRegistrationException("Enter Valid Second Name");
+    }
+
+    public String validEmailId(String email) throws UserRegistrationException {
+        Pattern pattern = Pattern.compile("^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$");
+
+        Matcher match = pattern.matcher(email);
+        if (match.matches())
+            return "Valid";
+        else
+            throw new UserRegistrationException("Enter Valid Email Id");
+    }
+
+    public String validPhoneNumber(String phoneNumber) throws UserRegistrationException {
+
+        boolean matcher = Pattern.matches("^91\s[6-9][0-9]{9}$", phoneNumber);
+        if (matcher)
+            return "Valid";
+        else
+            throw new UserRegistrationException("Enter Valid Phone Number");
+    }
+
+    public String validPassword(String password) throws UserRegistrationException {
+        boolean matcher = Pattern.matches("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$%^&+=])?.{8,}$", password);
+
+        if (matcher)
+            return "Valid";
+        else
+            throw new UserRegistrationException("Enter Valid Password");
+
+    }
+}
