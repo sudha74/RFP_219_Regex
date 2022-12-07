@@ -30,14 +30,12 @@ public class UserRegistrationParameterizedTest {
     @Parameterized.Parameters
     public static Collection emailInput() {
         return Arrays
-                .asList(new Object[][]{{"abhi@@yahoo.com", "InValid"}, {"abc.xyz@bl.co.india", "InValid"},
+                .asList(new Object[][]{{"sudha@@yahoo.com", "InValid"}, {"abc.xyz@bl.co.india", "InValid"},
                         {"abc.xyz$bl.co.in", "InValid"}, {"abc.xyz@bl.co.in", "Valid"}});
     }
 
-
     @Test
     public void testEmail() throws UserRegistrationException {
-        assertEquals(expectedResult, read.validEmailId(email));
+        assertEquals(expectedResult, read.validEmailId.validate(email));
     }
-
 }
