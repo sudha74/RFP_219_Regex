@@ -17,7 +17,7 @@ public class UserRegistrationTest {
     public void givenTextWhenItContainsFirstCapsInFnameAndMinThreeAlphabetsShouldReturnTrue() {
 
         try {
-            String actual = user.validFirstName.validate("Abhishek");
+            String actual = user.validFirstName.validate("Sudha");
             String expected = "Valid";
             Assertions.assertSame(actual, expected);
         } catch (UserRegistrationException e) {
@@ -28,7 +28,7 @@ public class UserRegistrationTest {
     @Test
     public void givenTextWhenItDoesNotContainsFirstCapsInFnameShouldReturnTrue() {
         try {
-            String actual = user.validFirstName.validate("abhishek");
+            String actual = user.validFirstName.validate("sudha");
             String expected = "Valid";
             Assertions.assertSame(actual, expected);
         } catch (UserRegistrationException e) {
@@ -39,7 +39,7 @@ public class UserRegistrationTest {
     @Test
     public void givenTextWhenItContainsFirstCapsInFnameButNotMinThreeCharShouldReturnTrue() {
         try {
-            String actual = user.validFirstName.validate("Ab");
+            String actual = user.validFirstName.validate("Sr");
             String expected = "Valid";
             Assertions.assertSame(actual, expected);
         } catch (UserRegistrationException e) {
@@ -51,7 +51,7 @@ public class UserRegistrationTest {
     public void givenTextWhenItContainsFirstCapsInSnameAndMinThreeAlphabetsShouldReturnTrue() {
 
         try {
-            String actual = user.validSecondName.validate("Sagar");
+            String actual = user.validSecondName.validate("Rani");
             String expected = "Valid";
             Assertions.assertSame(actual, expected);
         } catch (UserRegistrationException e) {
@@ -62,7 +62,7 @@ public class UserRegistrationTest {
     @Test
     public void givenTextWhenItDoesNotContainsFirstCapsInSnameShouldReturnFalse() {
         try {
-            String actual = user.validSecondName.validate("sagar");
+            String actual = user.validSecondName.validate("rani");
             String expected = "Valid";
             Assertions.assertSame(actual, expected);
         } catch (UserRegistrationException e) {
@@ -73,7 +73,7 @@ public class UserRegistrationTest {
     @Test
     public void givenTextWhenItContainsFirstCapsInSnameButNotMinThreeCharShouldReturnFalse() {
         try {
-            String actual = user.validSecondName.validate("Sa");
+            String actual = user.validSecondName.validate("Su");
             String expected = "Valid";
             Assertions.assertSame(actual, expected);
         } catch (UserRegistrationException e) {
